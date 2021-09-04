@@ -1,0 +1,31 @@
+@import "../mixins";
+
+$color-firma:#333;
+
+footer {
+    display: inline;
+    text-align: center;
+    color: $color-firma;
+    background-image: url(https://i.ibb.co/ZMCPNP6/dark-brick-wall-2-X.png);
+    h3 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .logo {
+        color: $color-textos;
+        background-color: transparent;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    } 
+    .nombre-logo {
+        @include logo;
+    }
+    .item-logo {
+        @include logo;
+    }
+
+}
+

@@ -1,0 +1,64 @@
+@import "../mixins";
+
+header {
+    nav ul a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: $color-fondo;
+        font-family:$fuente-principal;
+        font-size: 23px;
+        font-weight: bold;
+        text-transform:capitalize;
+        letter-spacing: 1px;
+    }
+    .navul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 45px;
+    }
+    .nava {
+        color: $color-textos;  
+        text-decoration: solid;
+        font-size: 23px;
+    }
+    ul {
+        background-color: $color-textos;
+        color: $color-textos;
+    }
+    ul a {
+        transition: all 0.3s;
+        &:hover {   
+            background-color: $color-hover;
+            color: $color-fondo;
+            transform: scale(1.05);
+        }
+    }
+    .logo {
+        color: $color-textos;
+        background-color: transparent;
+        margin: 5px;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        position: relative;
+        top: 5px;
+    } 
+    .nombre-logo {
+        @include logo;
+    }
+    .item-logo {
+        @include logo;
+    }
+    #logop {
+        transition: all 0.8s;
+        &:hover {
+            transform: scale(1.05);
+            background-color: transparent;  
+        }
+    }
+    
+}
+
+

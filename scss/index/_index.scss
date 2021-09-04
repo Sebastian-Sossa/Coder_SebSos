@@ -1,0 +1,66 @@
+@import "../mixins";
+@import "../generales/extends";
+
+main {
+    #main {
+        background-image: url(https://i.ibb.co/ZMCPNP6/dark-brick-wall-2-X.png);
+        background-color: $color-fondo;
+        @extend %display;
+
+        @media only screen and (max-width: 576px){
+            height: 35rem;     
+        }
+    }
+    #Imgprincipal {
+        max-width: 100%;
+        opacity: 0.7;
+        max-height: 100%;
+        object-fit: cover; 
+
+        @media only screen and (max-width: 576px) {
+            display: block; 
+            @include size-imgmob(100%,100%,cover) 
+                }
+        }
+}
+    #nombre {
+        @extend %display;
+
+        &:hover {
+            color: $color-hover;
+        }
+
+        @media only screen and (max-width: 576px) {
+                font-size: 70px;
+                text-align: center;
+                padding-top: 150px;
+                max-width: 90%;
+                max-height: 90%;
+        }
+    }
+.section-container {
+    text-align: center;
+    padding: 10px;
+
+    @media only screen and (max-width: 576px) {
+        display: block;
+    }
+}
+.section-index {
+    @extend %display;
+
+    @media only screen and (max-width: 576px){
+            display: block;
+    }
+}
+.img-sectionindex {
+    width: 50rem;
+	height: 30rem;
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 10px 10px 10px 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+

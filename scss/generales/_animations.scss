@@ -1,0 +1,50 @@
+.color-change {
+	-webkit-animation: color-change 1.5s linear 1.8s infinite alternate both;
+	        animation: color-change 1.5s linear 1.8s infinite alternate both;
+}
+
+ @-webkit-keyframes color-change {
+    0% {
+      background: #0a0a0a;
+    }
+    100% {
+      background: #212121 ;
+    }
+  }
+  @keyframes color-change {
+    0% {
+      background: #0a0a0a;
+    }
+    100% {
+      background: #212121 ;
+    }
+  }
+  
+.text-focus {
+	-webkit-animation: text-focus 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+@keyframes text-focus {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}

@@ -1,0 +1,19 @@
+#blogger {
+    padding-bottom: 15px;
+    background-image: none;
+}
+@media only screen and (max-width: 576px) {
+    .main-blog {
+        padding-top: 200px;
+    }
+}
+.masblog {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+
+    &:visited {
+        color: brown;
+    }
+}
+

@@ -1,0 +1,60 @@
+@mixin tamaño($max-width, $max-height) {
+    max-width: $max-width;
+    max-height: $max-height;
+}
+
+h1 {
+    display: inline;
+    font-family: $fuente-main;
+    color: $color-textos;
+    text-transform: capitalize;
+    font-size: $tamaño-titulo;
+    position: absolute;
+    z-index: 1;
+    @include tamaño(90%, 90%);
+}
+h2, h3 {
+    font-family: $fuente-principal;
+    text-align: center;
+    color: $color-textos;
+    text-transform: $text-transform;
+    font-size: $tamaño-subtitulo;
+}
+.titulos {
+    display: inline;
+    font-family: $fuente-principal;
+    color: $color-textos;
+    text-transform: capitalize;
+    font-size: $tamaño-titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: $color-hover;
+    }
+}
+.subtitulos {
+    background-color: transparent;
+    margin: 10px;    
+    transform: scale(1.05);
+}
+.article {
+    position: relative;
+    top: 30px;
+}
+p {
+    font-family: $fuente-secundaria;
+    color: $color-textos;
+    padding: 15px;
+    font-size: 20px;
+    @include tamaño(100%, 90%);
+    text-align: center;
+}
+.vermas {
+    margin: 15px;
+    border-bottom: 1px solid peachpuff;
+    font-size: 20px;
+    text-transform: $text-transform;
+    display: inline;
+}

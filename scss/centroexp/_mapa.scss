@@ -1,0 +1,33 @@
+@import '../generales/extends';
+
+#Encontranos {
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-image: url(https://i.ibb.co/tYvsN16/asfalt-2-X.png);
+}
+#Pdeencontranos {
+    color: $color-textos;
+    text-align: center;
+}
+
+#mapa {
+    width:500px;
+    height:450px; 
+    border:20px; 
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: inline; 
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    @media only screen and (max-width: 576px) {
+            max-width: 90%;
+            max-height: 90%;
+    }
+}
+

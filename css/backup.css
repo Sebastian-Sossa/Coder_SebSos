@@ -1,0 +1,699 @@
+/* Variables */
+:root {
+    --fuente-principal: 'Quicksand', sans-serif;
+    --fuente-secundaria: 'Montserrat', sans-serif;
+    --fuente-main: 'Gloria Hallelujah', cursive;
+    --color-fondo: #0a0a0a;
+    --color-textos: cornsilk;
+    --text-transform: capitalize;
+    --anchoimg: 95%;
+    --tamaño-titulo: 85px;
+    --tamaño-subtitulo: 40px;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+
+/* Estilos generales */
+
+body {
+    background-image: url(Image/asfalt_@2X.png);
+    background-color: var(--color-fondo);
+}
+
+#main {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.main-secundario, .main-blog {
+    margin-top: 40px;
+}
+
+a {
+    color: var(--color-textos);  
+    font-family: var(--fuente-secundaria);
+    text-decoration: none;
+    text-decoration: solid;
+    size: 20px;
+}
+
+/* Menu Nav*/
+
+.navul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 45px;
+}
+
+nav ul a {
+    display: block;
+    padding: 20px;
+    background-color: var(--color-textos);
+    text-decoration: none;
+    color: var(--color-fondo);
+    font-family:var(--fuente-principal);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+}
+.nava {
+    color: var(--color-textos);  
+    text-decoration: solid;
+    font-size: 23px;
+}
+
+ul a {
+    transition: all 0.3s;
+}
+ul a:hover {
+    background-color: peachpuff;
+    color: var(--color-fondo);
+    transform: scale(1.05);
+}
+
+.menu {
+    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Menu de navegación fijo*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+/* Logo */
+.logo {
+    color: var(--color-textos);
+    background-color: transparent;
+    margin: 5px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    position: relative;
+    top: 5px;
+}
+
+.nombre-logo {
+    font-size: 25px;
+    font-family: var(--fuente-main);
+}
+.item-logo {
+    font-size: 25px;
+    font-family: var(--fuente-main);
+}
+#logop {
+    transition: all 0.8s;
+}
+#logop:hover {
+    transform: scale(1.05);
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 576px){
+    .menu {
+        display: block;
+        position: absolute;
+    }
+    nav ul {
+        display: block;
+    }
+}
+/* Textos */
+
+h1 {
+    display: inline;
+    font-family: var(--fuente-main);
+    color: var(--color-textos);
+    text-transform: capitalize;
+    font-size: var(--tamaño-titulo);
+    position: absolute;
+    z-index: 1;
+    max-width: 90%;
+    max-height: 90%;
+    
+}
+h2, h3 {
+    font-family: var(--fuente-principal);
+    text-align: center;
+    color: var(--color-textos);
+    text-transform: var(--text-transform);
+    font-size: var(--tamaño-subtitulo);
+}
+.titulos {
+    display: inline;
+    font-family: var(--fuente-principal);
+    color: var(--color-textos);
+    text-transform: capitalize;
+    font-size: var(--tamaño-titulo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitulos {
+    background-color: transparent;
+    margin: 10px;    
+    transform: scale(1.05);
+}
+.article {
+    position: relative;
+    top: 30px;
+}
+
+p {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-textos);
+    padding: 15px;
+    font-size: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+}
+section {
+    padding-bottom: 15px;
+    background-image: url(Image/asfalt_@2X.png);
+}
+#blogger {
+    padding-bottom: 15px;
+    background-image: none;
+}
+/* Redes */
+
+#Redes {
+    background-color: cornsilk;
+    margin: 15px auto 25px auto;
+    display: flex;
+    justify-content: center; 
+}
+.redes {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+@media only screen and (max-width: 576px){
+    #Redes {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+    .redes {
+        display: block;  
+    }
+}
+/* Footer */
+
+footer {
+    display: inline;
+    text-align: center;
+    color: var(--color-textos);
+}
+.firma {
+    display: inline;
+}
+@media only screen and (max-width: 576px) {
+    .footer {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Index */
+
+#main {
+    background-image: url(Image/dark_brick_wall_@2X.png);
+    background-color: var(--color-fondo);
+    display: flex;
+    align-items: center;
+}
+#Imgprincipal {
+    max-width: 100%;
+    opacity: 0.7;
+    max-height: 100%;
+}
+
+#nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nombre:hover {
+    color: peachpuff;
+}
+.section-container {
+    text-align: center;
+    padding: 10px;
+}
+.section-index {
+    display: flex;
+    align-items: center;
+}
+.img-sectionindex {
+    width: 50rem;
+	height: 30rem;
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 10px 10px 10px 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 576px){
+    #main {
+        height: 35rem;
+    }
+    #Imgprincipal {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    .section-index {
+        display: block;
+    }
+    #nombre {
+        font-size: 70px;
+        text-align: center;
+        padding-top: 150px;
+    }
+}
+#Nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-fondo); 
+    padding: 70px 10px 0 12px;
+}
+@media only screen and (max-width: 576px) {
+    #Nosotros {
+        padding-top: 200px;
+    }
+    .main-blog {
+        padding-top: 200px;
+    }
+}
+#Pdenosotros {
+    color: var(--color-textos);
+}
+.imgus {
+    width: 50rem;
+	height: 30rem;
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 10px 10px 10px 5px;
+    max-width: 90%;
+    max-height: 90%;
+}
+.videous {
+    width: 60rem;
+	height: 30rem;
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 10px 10px 10px 5px;
+    max-width: 90%;
+    max-height: 90%;
+}
+.nosotros-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-us {
+    display: inline-flex;
+    align-items: center;
+}
+@media only screen and (max-width: 576px) {
+    .flex-us, .section-index {
+        display: block;
+    }
+}
+.vermas {
+    margin: 15px;
+    border-bottom: 1px solid peachpuff;
+    font-size: 20px;
+    text-transform: var(--text-transform);
+    display: inline;
+}
+.masblog {
+    display: flex;
+    justify-content: center;
+}
+
+/* Centro de Experiencia*/
+
+.centro-experiencia {
+    margin: 0;
+    padding: 30px;
+    background-image: url(Image/dark_brick_wall_@2X.png);
+    text-align: center;
+}
+.contenedor-titulocd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.titulo-ce {
+    transition: all 0.3s;
+}
+.titulo-ce:hover {
+    color: peachpuff;
+}
+#Videocentro {
+    max-width: var(--anchoimg);
+    width: 1000px;
+    height: 500px;
+    opacity: 0.8;
+    display: inline-flex;
+    justify-content: center;
+    max-height: 90%;
+    max-width: 90%;
+    padding-top: 200px 0 20px 0;
+    margin-top: 180px;
+    border-radius: 30px;
+}
+.parrafo-detail {
+    padding-left: 10rem;
+}
+#Encontranos {
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-image: url(Image/asfalt_@2X.png);
+}
+#Pdeencontranos {
+    color: var(--color-textos);
+    text-align: center;
+}
+
+#mapa {
+    width:500px;
+    height:450px; 
+    border:20px; 
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: inline;    
+}
+
+/* Marcas */
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.marcas {
+    max-width: 100%;
+    width: 40rem;
+    height: 35rem;
+    opacity: 0.5;
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+/* Form */
+.texto-color {
+    color: var(--color-textos);
+}
+
+.form {
+    border: 2px solid cornsilk;
+    border-radius: 25px;
+}
+/* Pseudo clases */
+.marcas:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+.redes:hover {
+    transform: scale(1.3);
+}
+#Videocentro:hover, #mapa:hover {
+    transform: scale(1.05);
+}
+.img-article, .imgus, .videous {
+    transition: all 0.5s;
+}
+.imgus:hover, .videous:hover, .img-article:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+a:hover {
+    color: peachpuff;
+}
+a:active {
+    color: rgb(243, 164, 95);
+}
+.titulos:hover {
+    color: peachpuff;
+}
+
+/* Grid */
+
+/*Grid Centro Exp */ 
+
+.grid-centroexp {
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 10rem 20rem 20rem 5rem;
+    grid-gap: 10px;
+	background-color: var(--color-fondo);
+    padding: 20px; 
+    background-image: url(Image/asfalt_@2X.png);
+}
+
+.grid-centroexp img:nth-child(1) {
+    grid-row: 1 / 3;
+	grid-column: 1 / 3;
+}
+.grid-centroexp img:nth-child(2) {
+    grid-row: 3 / 4;
+	grid-column: 2 / 1;
+}
+.grid-centroexp img:nth-child(3) {
+    grid-row: 2 / 4;
+	grid-column: 2 / 3;
+}
+.grid-centroexp p {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+}
+
+@media only screen and (max-width: 576px) {
+    .grid-centroexp {
+        display: block;
+    }
+    #mapa {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+/* Grid Blog */
+
+.grid-blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem 12rem 5rem;
+    grid-column-gap: 5px;
+    grid-row-gap: 3px; 
+    grid-gap: 10px;
+    padding: 10px;
+}
+.img-article {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.grid-blog img { 
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+.grid-blog h3 { 
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; 
+}
+.grid-blog p  { 
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.grid-blog a { 
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+} 
+
+.grid-blogb {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem 12rem 5rem;
+    grid-column-gap: 5px;
+    grid-row-gap: 3px; 
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-blogb img { 
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+}
+.grid-blogb h3 { 
+    grid-row: 1 / 2;
+    grid-column: 1 / 2; 
+}
+.grid-blogb p  { 
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+.grid-blogb a { 
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+@media only screen and (max-width: 576px) {
+    .grid-blog, .grid-blogb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+ /* Grid Gallery*/
+
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 20rem 20rem;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.gallery img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    background-image: url(Image/asfalt_@2X.png);
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.gallery img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.gallery img:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+.gallery img:nth-child(2) {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.gallery img:nth-child(3) {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.gallery img:nth-child(4) {
+	grid-row: 2 / 2;
+	grid-column: 3 / 3;
+}
+@media only screen and (max-width: 576px){
+    .menu {
+        display: inline-flex;
+        position: absolute;
+    }
+    .gallery {
+        display: block;
+    }
+    .section-container {
+        display: block;
+    }
+    #blogger {
+        background-color: #101010;
+    }
+}
+
+/* Animaciones */
+
+
+.color-change {
+	-webkit-animation: color-change 1.5s linear 1.8s infinite alternate both;
+	        animation: color-change 1.5s linear 1.8s infinite alternate both;
+}
+
+ @-webkit-keyframes color-change {
+    0% {
+      background: #0a0a0a;
+    }
+    100% {
+      background: #212121 ;
+    }
+  }
+  @keyframes color-change {
+    0% {
+      background: #0a0a0a;
+    }
+    100% {
+      background: #212121 ;
+    }
+  }
+  
+.text-focus {
+	-webkit-animation: text-focus 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+@keyframes text-focus {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+}
+  

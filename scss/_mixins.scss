@@ -1,0 +1,33 @@
+@mixin prefijos($propiedad) {
+    -webkit-transform: $propiedad;
+    -o-transform: $propiedad;
+    -moz-transform: $propiedad;
+    transform: $propiedad;
+}
+@mixin logo {
+    font-size: 25px;
+    font-family: $fuente-main;
+}
+@mixin display-main {
+    display: flex;
+    align-items: center;
+}
+@mixin video-index($width, $height, $object, $opacity) {
+    max-width: $width;
+    max-height: $height;
+    object-fit: $object;
+    opacity: $opacity;
+}
+@mixin size-imgmob($width, $height, $object) {
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
+@mixin max($max-width, $max-height) {
+    max-width: $max-width;
+    max-height: $max-height;
+}
+@mixin transform {
+    opacity: 1;
+    transform: scale(1.05);
+}
