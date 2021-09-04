@@ -194,6 +194,10 @@ footer .item-logo {
   text-align: center;
   font-size: 40px;
   z-index: 1;
+  transition: all 0.8s;
+}
+.whatsapp:hover {
+  transform: scale(1.1);
 }
 
 .whatsapp-icon {
