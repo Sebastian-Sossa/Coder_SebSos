@@ -13,6 +13,7 @@ html {
 body {
   background-image: url(https://i.ibb.co/tYvsN16/asfalt-2-X.png);
   background-color: #0a0a0a;
+  overflow-x: hidden;
 }
 
 a {
@@ -46,7 +47,7 @@ header nav ul a {
 header .navul {
   display: flex;
   justify-content: flex-end;
-  margin-right: 45px;
+  margin-right: 30px;
 }
 header .nava {
   color: cornsilk;
@@ -267,27 +268,6 @@ p {
   display: inline;
 }
 
-.color-change {
-  -webkit-animation: color-change 1.5s linear 1.8s infinite alternate both;
-  animation: color-change 1.5s linear 1.8s infinite alternate both;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    background: #0a0a0a;
-  }
-  100% {
-    background: #212121;
-  }
-}
-@keyframes color-change {
-  0% {
-    background: #0a0a0a;
-  }
-  100% {
-    background: #212121;
-  }
-}
 .text-focus {
   -webkit-animation: text-focus 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -657,7 +637,7 @@ main #Imgprincipal {
 }
 @media only screen and (max-width: 576px) {
   #Nosotros {
-    padding-top: 200px;
+    padding-top: 80px;
   }
 }
 
@@ -741,7 +721,7 @@ main #Imgprincipal {
 
 @media only screen and (max-width: 576px) {
   .main-blog {
-    padding-top: 200px;
+    padding-top: 5px;
   }
 }
 .masblog {

@@ -11,6 +11,7 @@ html {
 body {
     background-image: url(https://i.ibb.co/tYvsN16/asfalt-2-X.png);
     background-color: $color-fondo;
+    overflow-x: hidden;
 }
 a {
     color: $color-textos;  
